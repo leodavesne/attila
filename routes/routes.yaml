@@ -1,0 +1,23 @@
+
+routes:
+  /:
+    data: page.home
+    template: home
+
+collections:
+  /en/:
+    permalink: /en/{slug}/
+    template: index
+    filter: 'tag:hash-en'
+  /fr/:
+      permalink: /fr/{slug}/
+      template: index-fr
+      filter: 'tag:hash-fr'
+  /de/:
+    permalink: /de/{slug}/
+    template: index-de
+    filter: 'tag:hash-de'
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
